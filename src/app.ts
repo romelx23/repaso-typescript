@@ -2,6 +2,10 @@ import { tiposBasicos } from './ejercicios/01-tipos-basicos';
 import { arrObject } from './ejercicios/02-arr-obj-inter';
 import { funciones } from './ejercicios/03-funciones';
 import { Tarea } from './ejercicios/04-tarea';
+import { desesObjecto } from './ejercicios/05-desetructuracion';
+import { calculaISV, desesArgu, Producto } from './ejercicios/06-desestruc-func';
+import { importExport } from './ejercicios/07-import-export';
+import { iroman } from './ejercicios/08-clases';
 // console.log('hola jean¡¡¡¡¡¡¡¡¡')
 
 // tiposBasicos()
@@ -12,32 +16,11 @@ import { Tarea } from './ejercicios/04-tarea';
 
 // Tarea()
 
-interface Reproductor{
-    volumen:number;
-    segundo:number;
-    cancion:string;
-    detalles:Detalles;
-}
+// desesObjecto()
 
-interface Detalles{
-    autor:string;
-    anio:number;
-}
+// desesArgu()
 
-const reporductor:Reproductor={
-    volumen:90,
-    segundo:36,
-    cancion:'TRUE BLUE',
-    detalles:{
-        autor:'Ed sheran',
-        anio:2015
-    }
-}
+// importExport()
 
-const {volumen,segundo,cancion,detalles:{autor:autorDetalle}}=reporductor;
-// const {autor}=detalles
+// console.log(iroman)
 
-console.log('El volumen actual es de: ',volumen);
-console.log('El segundo actual es de: ',segundo);
-console.log('El cancion actual es de: ',cancion);
-console.log('El autor actual es: ',autorDetalle);
